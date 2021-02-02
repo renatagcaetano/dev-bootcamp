@@ -21,6 +21,7 @@ public class Exer3 {
             Pessoa pessoaAtual = grupoDePessoas.getPessoasList().get(i);
             System.out.println("pessoaAtual: " + pessoaAtual);
         }
-
+        grupoDePessoas.encontraMaiorIdade(grupoDePessoas.pessoasList);
+        grupoDePessoas.encontraMenorIdade(grupoDePessoas.pessoasList);
     }
 }
