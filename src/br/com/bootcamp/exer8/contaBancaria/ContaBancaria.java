@@ -1,13 +1,11 @@
 package br.com.bootcamp.exer8.contaBancaria;
 
-import br.com.bootcamp.exer8.contaPoupanca.ContaPoupanca;
-
 import java.math.BigDecimal;
 
 public abstract class ContaBancaria {
 
-    private Integer numeroConta;
-    private BigDecimal saldo;
+    public Integer numeroConta;
+    public BigDecimal saldo;
 
     public ContaBancaria(Integer numeroConta,
                          BigDecimal saldo){
@@ -15,13 +13,23 @@ public abstract class ContaBancaria {
         this.saldo = saldo;
     }
 
-
-    public BigDecimal sacar(BigDecimal saque){
-        return saldo.subtract(saque);
+    public void setNumeroConta(Integer numeroConta) {
+        this.numeroConta = numeroConta;
     }
 
-    public BigDecimal depositar(BigDecimal deposito){
-        return saldo.add(deposito);
+    public void setSaldo(BigDecimal saldo) {
+        this.saldo = saldo;
     }
+
+    public Integer getNumeroConta() {
+        return numeroConta;
+    }
+
+    public BigDecimal getSaldo() {
+        return saldo;
+    }
+
+    public abstract void sacar(BigDecimal saque);
+    public abstract void depositar(BigDecimal deposito);
 
 }
