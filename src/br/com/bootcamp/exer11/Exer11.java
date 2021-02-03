@@ -1,13 +1,12 @@
-package br.com.bootcamp.exer8;
+package br.com.bootcamp.exer11;
 
-import br.com.bootcamp.exer8.contaBancaria.ContaBancaria;
-import br.com.bootcamp.exer8.contaCorrente.ContaCorrente;
-import br.com.bootcamp.exer8.contaPoupanca.ContaPoupanca;
+import br.com.bootcamp.exer11.contaBancaria.ContaBancaria;
+import br.com.bootcamp.exer11.contaCorrente.ContaCorrente;
+import br.com.bootcamp.exer11.contaPoupanca.ContaPoupanca;
 
 import java.math.BigDecimal;
 
-public class Exer8 {
-
+public class Exer11 {
     public static void main(String[] args) {
         BigDecimal saldoPoupanca = new BigDecimal(20000);
         BigDecimal taxaDeOperacao = new BigDecimal(2);
@@ -28,6 +27,11 @@ public class Exer8 {
 
         BigDecimal depositoCorrente = new BigDecimal(10000);
         contaCorrente.depositar(depositoCorrente);
-    }
 
+        Relatorio relatorio1 = new Relatorio();
+        relatorio1.gerar((Imprimivel) contaCorrente);
+
+        Relatorio relatorio2 = new Relatorio();
+        relatorio2.gerar((Imprimivel) contaPoupanca);
+    }
 }
