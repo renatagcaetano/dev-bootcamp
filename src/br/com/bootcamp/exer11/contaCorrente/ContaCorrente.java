@@ -48,7 +48,9 @@ public class ContaCorrente extends ContaBancaria implements Imprimivel {
     @Override
     public String toString() {
         return "ContaCorrente{" +
-                "limite=" + limite +
+                "numeroConta=" + numeroConta +
+                ", saldo=" + saldo +
+                ", limite=" + limite +
                 ", limiteMaximo=" + limiteMaximo +
                 '}';
     }

@@ -37,7 +37,9 @@ public class ContaPoupanca extends ContaBancaria implements Imprimivel {
     @Override
     public String toString() {
         return "ContaPoupanca{" +
-                "taxaDeOperacao=" + taxaDeOperacao +
+                "numeroConta=" + numeroConta +
+                ", saldo=" + saldo +
+                ", taxaDeOperacao=" + taxaDeOperacao +
                 '}';
     }
 

@@ -20,7 +20,7 @@ public class Exer11 {
 
         BigDecimal saldoCorrente = new BigDecimal(40000);
         BigDecimal limite = new BigDecimal(9000);
-        ContaBancaria contaCorrente = new ContaCorrente(1, saldoCorrente, limite);
+        ContaBancaria contaCorrente = new ContaCorrente(2, saldoCorrente, limite);
 
         BigDecimal saqueCorrente = new BigDecimal(45000);
         contaCorrente.sacar(saqueCorrente);
@@ -33,5 +33,12 @@ public class Exer11 {
 
         Relatorio relatorio2 = new Relatorio();
         relatorio2.gerar((Imprimivel) contaPoupanca);
+
+        Banco banco = new Banco();
+        banco.inserir(contaCorrente);
+        banco.inserir(contaPoupanca);
+
+        System.out.println("Banco procurado: " + banco.procurar(1));
+        System.out.println("Banco procurado: " + banco.procurar(2));
     }
 }
