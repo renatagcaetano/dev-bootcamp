@@ -37,6 +37,7 @@ public class Exer11 {
         Banco banco = new Banco();
         banco.inserir(contaCorrente);
         banco.inserir(contaPoupanca);
+        banco.inserir(contaCorrente);
 
         System.out.println("Banco procurado: " + banco.procurar(1));
         System.out.println("Banco procurado: " + banco.procurar(2));
