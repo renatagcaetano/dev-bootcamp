@@ -10,7 +10,7 @@ public class Retangulo extends FiguraGeometrica {
     }
 
     @Override
-    public void getArea() {
-        System.out.println("Área do retângulo: " + getLado1() * getLado2());
+    public double getArea() {
+        return getLado1() * getLado2();
     }
 }

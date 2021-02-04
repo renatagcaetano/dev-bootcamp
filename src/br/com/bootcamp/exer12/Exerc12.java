@@ -8,14 +8,14 @@ public class Exerc12 {
 
     public static void main(String[] args) {
 
-        Quadrado quadrado = new Quadrado(1, 2);
-        quadrado.getArea();
+        Quadrado quadrado = new Quadrado(3, 3);
+        System.out.println("Área do quadrado: " + quadrado.getArea());
 
-        Retangulo retangulo = new Retangulo(3, 3);
-        retangulo.getArea();
+        Retangulo retangulo = new Retangulo(3, 2);
+        System.out.println("Área do retângulo: " + retangulo.getArea());
 
         Triangulo triangulo = new Triangulo(2, 3);
-        triangulo.getArea();
+        System.out.println("Área do triângulo: " + triangulo.getArea());
 
     }
 

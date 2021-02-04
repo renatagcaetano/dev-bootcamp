@@ -10,7 +10,7 @@ public class Quadrado extends FiguraGeometrica {
     }
 
     @Override
-    public void getArea() {
-        System.out.println("Área do quadrado: " + getLado1() * getLado2());
+    public double getArea() {
+        return getLado1() * getLado2();
     }
 }

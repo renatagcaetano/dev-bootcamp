@@ -10,7 +10,7 @@ public class Triangulo extends FiguraGeometrica {
     }
 
     @Override
-    public void getArea() {
-        System.out.println("Área do triângulo: " + getLado1() * getLado2() / 2);
+    public double getArea() {
+        return getLado1() * getLado2() / 2;
     }
 }
